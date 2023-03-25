@@ -31,4 +31,10 @@ for col in df.columns:
 
 agent = create_OpenDataBIM_helper_agent(llm, df, verbose=True)
 
-agent.run("""find the total "Volume" of elements with Category "OST_Walls".""")
+agent.run("""find the total "Volume" of elements with Category "OST_Walls" it's in cubic meters""")
+
+agent.run("""how much polystyrene concrete cost in Manchester? in euro""")
+
+agent.run("""and how much traditional concrete costs?""")
+
+agent.run("""and how much will it cost to fill the Volume of my project?""")
